@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario simples</title>
+</head>
+<body>
+    <form action="/p_dados" method="post">
+        <fieldset>
+            <legend>Dados Gerais</legend>
+            <label for="nome">nome:</label>
+            <input type="text" minlength="3" id="nome">
+            <label for="d_nas">Data de nascimento:</label>
+            <input type="date" id="d_nas">
+            <label for="cpf">CPF:</label>
+            <input type="cpf" id="cpf" minlength="11" maxlength="11">
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="Tipo de endereço">Tipo de Endereço:</label>
+            <select id="tipo de endereço">
+                <option value="Rua">Rua:</option>
+                <option value="Estrada">Estrada:</option>
+                <option value="Rodovia">Rodovia:</option>
+                <option value="outro">Rodovia:</option>
+            </select>
+            <label for="Lagradouro">Lagradouro:</label>
+            <input type="text" id="Lagradouro">
+            <label for="Numero">Numero:</label>
+            <input type="text" id="Numero">
+            <label for="Complemento">Complemento:</label>
+            <input type="text" id="Complemento">
+        </fieldset>
+        <fieldset>
+            <legend>Fale conosco</legend>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem"></textarea>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Enviar Formulario</button>
+            <button type="reset">Limpar formulario</button>
+        </fieldset>
+    </form>
+</body>
+</html>
